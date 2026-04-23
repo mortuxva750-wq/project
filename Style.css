@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: #f5f7fa;
+    color: #333;
+}
+header{
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+}
+
+header ul li a{
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+header ul li a:hover{
+    background: #e8f0fe;
+    color: #2c6bed;
+}
+h1, h2{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 500;
+}
+table{
+    width: 85%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+th{
+    background: #eef2f7;
+    color: #444;
+    padding: 12px;
+    font-weight: 600;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+table tr td img{
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+}
+button{
+    display: block;
+    margin: 8px auto;
+    padding: 8px 14px;
+    border: none;
+    background: #2c6bed;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+    background: #1a4fc4;
+}
+#cancelBtn1{
+    display: inline;
+}
+#cancelBtn{
+    background: #e55353;
+    display: inline;
+}
+
+#cancelBtn:hover{
+    background: #c73c3c;
+}
+#overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    display: none;
+}
+
+#formBox{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: none;
+    text-align: center;
+}
+
+#formBox input{
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.agin, .intolin{
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    direction: rtl;
+}
+
+.agin h2, .intolin h2{
+    text-align: right;
+}
+.bool{
+    direction: rtl;
+    margin-top: 20px;
+}
+.bool a{
+    text-decoration: none;
+}

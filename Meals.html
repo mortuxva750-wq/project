@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Meals</title>
+<link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Meals.html">Meals</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<h2>Premium Meals Menu</h2>
+
+<table>
+    <tr>
+        <th>اختيار</th>
+        <th>الرمز</th>
+        <th>الوجبة</th>
+        <th>السعر</th>
+        <th>إظهار التفاصيل</th>
+    </tr>
+
+<tr>
+    <td><input type="checkbox" value="180000" class="meal"></td>
+    <td>PM-001</td>
+    <td>ستيك لحم مشوي</td>
+    <td>180000</td>
+    <td><button onclick="toggleDetails(this)">تفاصيل</button></td>
+</tr>
+
+<tr class="details" style="display:none;">
+    <td colspan="2">
+        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e" alt="steak">
+    </td>
+    <td colspan="3" class="lis">
+        <b>المطبخ:</b> أمريكي<br>
+        <b>التصنيف:</b> طبق فاخر<br>
+        <b>المكونات:</b> لحم بقري، فلفل أسود، زبدة، ثوم<br>
+        <b>الصلصة:</b> صلصة الفلفل الكريمية
+    </td>
+</tr>
+
+<tr>
+    <td><input type="checkbox" value="95000" class="meal"></td>
+    <td>PM-002</td>
+    <td>برغر لحم كلاسيك</td>
+    <td>95000</td>
+    <td><button onclick="toggleDetails(this)">تفاصيل</button></td>
+</tr>
+
+<tr class="details" style="display:none;">
+    <td colspan="2">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="burger">
+    </td>
+    <td colspan="3" class="lis">
+        <b>المطبخ:</b> أمريكي<br>
+        <b>التصنيف:</b> وجبة سريعة<br>
+        <b>المكونات:</b> خبز برغر، لحم، جبنة، خس، طماطم<br>
+        <b>الصلصة:</b> صلصة خاصة بالمطعم
+    </td>
+</tr>
+
+<tr>
+    <td><input type="checkbox" value="140000" class="meal"></td>
+    <td>PM-003</td>
+    <td>سوشي ياباني</td>
+    <td>140000</td>
+    <td><button onclick="toggleDetails(this)">تفاصيل</button></td>
+</tr>
+
+<tr class="details" style="display:none;">
+    <td colspan="2">
+        <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="sushi">
+    </td>
+    <td colspan="3" class="lis">
+        <b>المطبخ:</b> ياباني<br>
+        <b>التصنيف:</b> مأكولات بحرية<br>
+        <b>المكونات:</b> أرز، سمك سلمون، أفوكادو<br>
+        <b>الصلصة:</b> صلصة الصويا والوسابي
+    </td>
+</tr>
+
+<tr>
+    <td><input type="checkbox" value="120000" class="meal"></td>
+    <td>PM-004</td>
+    <td>بيتزا مارجريتا</td>
+    <td>120000</td>
+    <td><button onclick="toggleDetails(this)">تفاصيل</button></td>
+</tr>
+
+<tr class="details" style="display:none;">
+    <td colspan="2">
+        <img src="https://images.unsplash.com/photo-1548365328-9f547f1d8c33" alt="pizza">
+    </td>
+    <td colspan="3" class="lis">
+        <b>المطبخ:</b> إيطالي<br>
+        <b>التصنيف:</b> وجبة رئيسية<br>
+        <b>المكونات:</b> عجينة، صلصة طماطم، جبنة موزاريلا<br>
+        <b>الصلصة:</b> صلصة الطماطم الإيطالية
+    </td>
+</tr>
+
+</table>
+
+<br>
+
+<button id="checkoutBtn" onclick="checkout()">متابعة</button>
+
+<div id="overlay"></div>
+
+<div id="formBox">
+
+<h3>نموذج الطلب</h3>
+
+<input type="text" id="name" placeholder="الاسم الكامل">
+<br><br>
+
+<input type="text" id="national" placeholder="الرقم الوطني">
+<br><br>
+
+<input type="text" id="birth" placeholder="dd-mm-yyyy">
+<br><br>
+
+<input type="text" id="phone" placeholder="رقم الموبايل">
+<br><br>
+
+<input type="email" id="email" placeholder="Email">
+<br><br>
+
+<button onclick="submitOrder()" id="cancelBtn1">إرسال</button>
+<button onclick="closeForm()" id="cancelBtn">إلغاء</button>
+
+</div>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="myFunctions.js"></script>
+
+</body>
+</html>
